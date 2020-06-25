@@ -1,0 +1,4 @@
+-dependson: *
+-fixupmessages  The JAR is empty
+-export \
+	vn.cxfc.lient.app.bndrun

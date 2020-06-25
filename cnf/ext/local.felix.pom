@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>vn.hsv.eclipse</groupId>
+	<artifactId>jetty</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+	<properties>
+		<!-- to support apache web console, its version matching to jetty version -->
+		<http.jetty.version>4.0.6</http.jetty.version>
+		<!-- ops4j.pax also dependency to asm, 7.1.1 í latest working with asm-6.2, so choose it for jetty 9.4.12.v20180830 -->
+		<ops4j.pax.version>7.1.1</ops4j.pax.version>
+	</properties>
+	<dependencies>
+		<dependency>
+		    <groupId>org.apache.felix</groupId>
+		    <artifactId>org.apache.felix.http.jetty</artifactId>
+		    <version>${http.jetty.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.felix</groupId>
+		    <artifactId>org.apache.felix.webconsole</artifactId>
+		    <version>4.3.12</version>
+		</dependency>
+		<!-- http://ops4j.github.io/pax/web/SNAPSHOT/Developer-Guide.html#artifacts -->
+		<!-- it create new jetty server instance on port 8080, independent to main default instance  -->
+<!--		<dependency>
+		    <groupId>org.ops4j.pax.web</groupId>
+		    <artifactId>pax-web-api</artifactId>
+		    <version>${ops4j.pax.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.ops4j.pax.web</groupId>
+		    <artifactId>pax-web-spi</artifactId>
+		    <version>${ops4j.pax.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.ops4j.pax.web</groupId>
+		    <artifactId>pax-web-jsp</artifactId>
+		    <version>${ops4j.pax.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.ops4j.pax.web</groupId>
+		    <artifactId>pax-web-jetty</artifactId>
+		    <version>${ops4j.pax.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.ops4j.pax.web</groupId>
+		    <artifactId>pax-web-runtime</artifactId>
+		    <version>${ops4j.pax.version}</version>
+		</dependency>
+-->
+		<dependency>
+		    <groupId>org.apache.xbean</groupId>
+		    <artifactId>xbean-finder</artifactId>
+		    <version>4.6</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.xbean</groupId>
+		    <artifactId>xbean-bundleutils</artifactId>
+		    <version>4.6</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.xbean</groupId>
+		    <artifactId>xbean-reflect</artifactId>
+		    <version>4.6</version>
+		</dependency>
+	</dependencies>
+</project>
