@@ -20,6 +20,7 @@
 		releaseUrls=https://repo.maven.apache.org/maven2/; \
 		pom=${.}/local.jetty.pom; \
 		readOnly=true; \
+		transitive=false; \
 		name="Jetty artifact 9.4.30"
 
 -plugin.31.Jakarta: \
@@ -28,6 +29,7 @@
 		releaseUrls=https://repo.maven.apache.org/maven2/; \
 		pom=${.}/local.jakarta.pom; \
 		readOnly=true; \
+		transitive=false; \
 		name="Jakarta"
 
 -plugin.32.felix: \
@@ -36,6 +38,7 @@
 		releaseUrls=https://repo.maven.apache.org/maven2/; \
 		pom=${.}/local.felix.pom; \
 		readOnly=true; \
+		transitive=false; \
 		name="Apache Felix"
 
 -plugin.33.zk.p2: \

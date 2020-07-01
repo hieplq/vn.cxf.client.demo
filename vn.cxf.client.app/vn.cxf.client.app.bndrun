@@ -17,7 +17,6 @@
 	org.apache.felix.eventadmin;version='[1.5.0,1.5.1)',\
 	org.apache.geronimo.specs.geronimo-jta_1.1_spec;version='[1.1.1,1.1.2)',\
 	org.apache.taglibs.standard.glassfish;version='[1.2.0,1.2.1)',\
-	org.eclipse.jdt.core.compiler.batch;version='[3.19.0,3.19.1)',\
 	org.eclipse.jetty.annotations;version='[9.4.30,9.4.31)',\
 	org.eclipse.jetty.apache-jsp;version='[9.4.30,9.4.31)',\
 	org.eclipse.jetty.apache.jstl;version='[9.4.30,9.4.31)',\
@@ -40,7 +39,8 @@
 	org.mortbay.jasper.apache-jsp;version='[8.5.54,8.5.55)',\
 	org.objectweb.asm;version='[7.3.1,7.3.2)',\
 	com.sun.activation.jakarta.activation;version='[1.2.1,1.2.2)',\
-	jakarta.activation-api;version='[1.2.1,1.2.2)'
+	jakarta.activation-api;version='[1.2.1,1.2.2)',\
+	org.eclipse.jdt.core.compiler.batch;version='[3.22.0,3.22.1)'
 
 -runproperties: \
 	jetty.home=jettyhome,\
