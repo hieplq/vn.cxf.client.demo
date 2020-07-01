@@ -13,7 +13,6 @@
 	osgi.enroute.hamcrest.wrapper, \
 	org.assertj.core
 
--includeresource: WEB-INF=WEB-INF
 Web-ContextPath: /
 Webapp-Context: /
 
