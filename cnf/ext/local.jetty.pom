@@ -8,13 +8,17 @@
 	<version>1.0.0</version>
 	<packaging>pom</packaging>
 	<properties>
-		<jetty.version>9.4.30.v20200611</jetty.version>
-		<asm.version>7.3.1</asm.version>
+		<jetty.version>10.0.6</jetty.version>
+		<asm.version>9.1</asm.version>
 		<!-- to support apache web console, its version matching to jetty version -->
 		<http.jetty.version>4.0.6</http.jetty.version>
+		<toolchain.servlet.api>4.0.1</toolchain.servlet.api>
+		<mortbay.apache.jsp>9.0.29</mortbay.apache.jsp>
+		<aries.spifly>1.3.3</aries.spifly>
+		
 	</properties>
 	<dependencies>
-		<!-- org.ow2.asm -->
+<!-- org.ow2.asm -->
 		<dependency>
 			<groupId>org.ow2.asm</groupId>
 			<artifactId>asm</artifactId>
@@ -30,16 +34,27 @@
 			<artifactId>asm-tree</artifactId>
 			<version>${asm.version}</version>
 		</dependency>
-		<!-- extra bundle -->
+		<dependency>
+			<groupId>org.ow2.asm</groupId>
+			<artifactId>asm-util</artifactId>
+			<version>${asm.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.ow2.asm</groupId>
+			<artifactId>asm-analysis</artifactId>
+			<version>${asm.version}</version>
+		</dependency>
+
+<!-- extra bundle -->
 		<dependency>
 			<groupId>org.eclipse.jetty.toolchain</groupId>
 			<artifactId>jetty-osgi-servlet-api</artifactId>
-			<version>3.1.0.M3</version>
+			<version>${toolchain.servlet.api}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.aries.spifly</groupId>
 			<artifactId>org.apache.aries.spifly.dynamic.bundle</artifactId>
-			<version>1.2.4</version>
+			<version>${aries.spifly}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.jetty.orbit</groupId>
@@ -423,9 +438,14 @@
 			<version>${jetty.version}</version>
 		</dependency>
 		<dependency>
+		    <groupId>org.eclipse.jetty</groupId>
+		    <artifactId>jetty-slf4j-impl</artifactId>
+		    <version>${jetty.version}</version>
+		</dependency>
+		<dependency>
 			<groupId>org.mortbay.jasper</groupId>
 			<artifactId>apache-jsp</artifactId>
-			<version>8.5.54</version>
+			<version>${mortbay.apache.jsp}</version>
 		</dependency>
 		<dependency>
 			<groupId>jakarta.activation</groupId>

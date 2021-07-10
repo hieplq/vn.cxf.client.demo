@@ -9,7 +9,7 @@ biz.aQute:biz.aQute.osgi.templates:1.0.0
 
 org.osgi:osgi.annotation:7.0.0
 org.osgi:org.osgi.dto:1.1.0
-org.osgi:org.osgi.framework:1.9.0
+org.osgi:org.osgi.framework:1.10.0
 org.osgi:org.osgi.jmx:1.1.0
 org.osgi:org.osgi.namespace.contract:1.0.0
 org.osgi:org.osgi.namespace.extender:1.0.1
