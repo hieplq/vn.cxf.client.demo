@@ -17,3 +17,6 @@ Web-ContextPath: /
 Webapp-Context: /
 
 Require-Bundle: jakarta.activation-api;bundle-version="0.0.0"
+Import-Package: \
+	org.eclipse.jetty.servlet.listener,\
+	org.eclipse.jetty.servlet
